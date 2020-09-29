@@ -14,4 +14,5 @@ Ta-da! The extension has been successfully installed.
 
 ![Ta-da!](ta-da.png)
 
+## Learn More
 [Getting Started Tutorial - Google Chrome](https://developer.chrome.com/extensions/getstarted)
