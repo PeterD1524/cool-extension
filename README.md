@@ -11,4 +11,7 @@ The directory holding the manifest file can be added as an extension in develope
 ![Load Extension](https://developer.chrome.com/static/images/get_started/load_extension.png)
 
 Ta-da! The extension has been successfully installed.
+
+![Ta-da!](ta-da.png)
+
 [Getting Started Tutorial - Google Chrome](https://developer.chrome.com/extensions/getstarted)
