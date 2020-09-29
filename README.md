@@ -26,7 +26,8 @@ can be added as an extension in developer mode in its current state.
   Click the LOAD UNPACKED button
   and select the extension directory.
   
-  [image](https://developer.chrome.com/static/images/get_started/load_extension.png)
+  ![Load Extension]
+  (https://developer.chrome.com/static/images/get_started/load_extension.png)
 
 
 
