@@ -1,6 +1,6 @@
 # cool-extensions
 https://developer.chrome.com/extensions/getstarted
-## Snippet
+### Snippet
 
 The directory holding the manifest file
 can be added as an extension in developer mode in its current state.
