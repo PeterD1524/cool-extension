@@ -1,4 +1,4 @@
-# cool-extensions
+# cool-extension
 https://developer.chrome.com/extensions/getstarted
 ### Snippet
 
