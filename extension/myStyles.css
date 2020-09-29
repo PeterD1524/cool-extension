@@ -1,0 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Material+Icons);
+
+.video-js.vjs-v6 .vjs-download-button {
+    font-family: Material Icons;
+    cursor: pointer
+}
+
+.video-js.vjs-v6 .vjs-download-button .vjs-icon-placeholder:before {
+    content: "\e2c4"
+}
