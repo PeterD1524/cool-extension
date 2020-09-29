@@ -1,5 +1,4 @@
 # cool-extension
-
 The directory holding the manifest file can be added as an extension in developer mode in its current state.
 1. Open the Extension Management page by navigating to chrome://extensions.
    * The Extension Management page can also be opened by clicking on the Chrome menu, hovering over **More Tools** then selecting **Extensions**.
@@ -13,6 +12,5 @@ The directory holding the manifest file can be added as an extension in develope
 Ta-da! The extension has been successfully installed.
 
 ![Ta-da!](ta-da.png)
-
 ## Learn More
 [Getting Started Tutorial - Google Chrome](https://developer.chrome.com/extensions/getstarted)
