@@ -8,6 +8,8 @@ The directory holding the manifest file can be added as an extension in develope
 
 3. Click the **LOAD UNPACKED** button and select the extension directory.
 
-   ![Load Extension](https://developer.chrome.com/static/images/get_started/load_extension.png)
+![Load Extension](https://developer.chrome.com/static/images/get_started/load_extension.png)
+Ta-da! The extension has been successfully installed.
 
 [Getting Started Tutorial - Google Chrome](https://developer.chrome.com/extensions/getstarted)
+
