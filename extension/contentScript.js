@@ -37,7 +37,7 @@ function oyrgy06xEwMPnQhwz_pHiZlItMV05DZcljWs2JMschc() {
             },
             function (response) {
                 if (response === undefined) {
-                    console.log(chrome.runtime.lastError.message);
+                    console.log('chrome.runtime.lastError.message', chrome.runtime.lastError.message);
                 } else {
                     console.log('response', response);
                 }
