@@ -16,6 +16,12 @@ let options = [
         'description': "<p>Use a file-chooser to allow the user to select a filename regardless of whether <code>filename</code> is set or already exists.</p>",
         'input': { 'name': undefined, 'value': [true, false] },
         'default': 'unset',
+    },
+    {
+        'name': 'autoDownload',
+        'description': "<p>Automatically download videos when visiting a website that contains downloadable videos. The filename setting may become invalid.</p>",
+        'input': { 'name': undefined, 'value': [true, false] },
+        'default': false,
     }
 ]
 let key = 'coolOptions';
@@ -91,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function () {
             for (; i < property['input']['value'].length; i++) {
                 let input = document.createElement('input');
                 input.type = 'radio';
-                input.id = `${property['input']['name']}radio${i}`
+                input.id = `${property['input']['name']}radio${i}`;
                 input.name = property['input']['name'];
                 input.value = property['input']['value'][i];
                 input.style.verticalAlign = 'middle';
@@ -115,6 +121,23 @@ document.addEventListener('DOMContentLoaded', function () {
             let label = document.createElement('label');
             label.htmlFor = input.id;
             label.textContent = 'unset';
+            label.style.verticalAlign = 'middle';
+            label.style.marginRight = '1em';
+            div.appendChild(label);
+        } else if (property['name'] === 'autoDownload') {
+            if (property['input']['name'] === undefined) {
+                property['input']['name'] = property['name'];
+            }
+            let input = document.createElement('input');
+            input.type = 'checkbox';
+            input.id = `${property['input']['name']}checkbox0`;
+            input.name = property['input']['name'];
+            input.style.verticalAlign = 'middle';
+            input.style.marginTop = '0';
+            div.appendChild(input);
+            let label = document.createElement('label');
+            label.htmlFor = input.id;
+            label.textContent = 'true';
             label.style.verticalAlign = 'middle';
             label.style.marginRight = '1em';
             div.appendChild(label);
@@ -187,6 +210,8 @@ function set_options(obj) {
             } else {
                 div.querySelector(`input[value=${obj[property['name']]}]`).checked = true;
             }
+        } else if (property['name'] === 'autoDownload') {
+            div.querySelector('input').checked = obj[property['name']];
         }
     }
 }
@@ -210,6 +235,8 @@ function save_options() {
                     value = JSON.parse(value);
                 }
             }
+        } else if (property['name'] === 'autoDownload') {
+            value = div.querySelector('input').checked;
         }
         items[key][property['name']] = value;
     }
