@@ -24,7 +24,8 @@
   ],
   "options_page": "options.html",
   "permissions": [
-    "downloads"
+    "downloads",
+    "storage"
   ],
   "manifest_version": 2
 }
